@@ -1,0 +1,13 @@
+User-agent: * 
+Disallow: /admin*
+Disallow: /admin/login.php
+Disallow: /admin/?type=ed&id=*
+Disallow /admin/?type=add
+Disallow: /*css
+Disallow: /*js
+Allow: /about.php
+Allow: /pone.php?news
+Allow: /pone.php?club
+Allow: /index.php
+Allow: /pone.php?contact
+Host: гдм48.рф

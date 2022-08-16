@@ -1,0 +1,1081 @@
+@charset "utf-8";
+@font-face{
+	font-family:merriweatherlight;
+	src:url(../fonts/merriweatherlight.ttf);
+}
+@font-face{
+	font-family:merriweather;
+	src:url(../fonts/merriweather.ttf);
+}
+@font-face{
+	font-family:lato;
+	src:url(../fonts/lato.ttf);
+}
+
+body{
+	margin:0;
+	padding:0;
+	font-size:100%;
+	background:url('../img/bg/bg.svg') no-repeat;
+	background-size:cover;
+	background-attachment: fixed;
+}
+
+header{
+	max-width:1140px;
+	margin:30px auto 0 auto;
+	display:flex;
+}
+
+header .logo{
+	flex:1 1 250px;
+	height:130px;
+	margin-right:10px;
+}
+
+header .logo:nth-child(1){
+	background:url('../img/logo/logo.png') no-repeat;
+	background-size:210px 130px;
+	background-position:left center;
+}
+
+header .logo:nth-child(3){
+	flex:1 1 150px;
+	background:url('../img/logo/culturalogo.png') no-repeat;
+	background-size:110px 130px;
+	background-position:left center;
+}
+
+header .logotext{
+	flex:4 1 auto;
+}
+
+header .logotext h1{
+	font-family:lato;
+	font-size:2.05em;
+	color:#214454;
+	text-align:center;
+	text-transform:uppercase;
+	margin-top:0;
+	margin-bottom:5px;
+}
+
+header .logotext p{
+	font-family:merriweather;
+	font-size:1.7em;
+	color:#333333;
+	text-align:center;
+	margin-top:0;
+	margin-bottom:0;
+}
+
+header .logotext p:nth-child(1){
+	font-size:.95em;
+	margin-bottom:15px;
+}
+
+header .logotext p:nth-child(2){
+	text-align:center;
+	text-transform:uppercase;
+	font-family:lato;
+	color:#214454;
+	font-size:1.5em;
+}
+
+
+
+header .logotext p:nth-child(4){
+	font-size:1.25em;
+}
+
+/*левый большой контейнер*/
+
+.socseti{
+	max-width:1140px;
+	margin:30px auto 30px auto;
+	display:flex;
+	justify-content:flex-end;
+}
+
+.socseti a {
+	margin-right:3%;
+	font-size:24px;
+	color:#214454;
+	transition:all .5s ease;
+}
+
+.socseti a:hover{
+	color:black;
+}
+
+.allcontent{ 
+	max-width:1140px;
+	margin:0 auto 30px auto;
+	display:flex;
+}
+
+.allcontent .leftcontent{
+	flex:4 1 850px;
+	background-color:rgba(255, 255, 255, 0.3);
+	margin:0 35px 0 0;
+	padding-bottom:30px;
+}
+
+.allcontent .leftcontent nav{
+	max-width:850px;
+	height:50px;
+	background:#214454;
+}
+
+.allcontent .leftcontent nav menu{
+	display:flex;
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+
+.allcontent .leftcontent nav menu li{
+	flex:1 1 100px;
+	text-align:center;
+	height:50px;
+	line-height:50px;
+}
+
+.allcontent .leftcontent nav menu li a{
+	color:#fff;
+	font-family:lato;
+	font-size:1.5em;
+	text-decoration:none;
+}
+
+.allcontent .leftcontent nav menu li a:hover{
+	border-bottom:2px solid #fff;
+}
+
+.allcontent .leftcontent nav menu li:nth-child(3){
+	position:relative;
+}
+
+.allcontent .leftcontent nav menu li:nth-child(3) ul{
+	display:none;
+	padding:0;
+	margin:0;
+	margin-top:-2px;
+	list-style:none;
+	position:absolute;
+	z-index:9;
+	width:100%;
+}
+
+.allcontent .leftcontent nav menu li:nth-child(3) ul li{
+	background:#214454;
+}
+
+.allcontent .leftcontent nav menu li:nth-child(3):hover ul{
+	display:block;
+}
+
+.allcontent .rightcontent{
+	flex:1 1 auto;
+}
+
+/*левый большой контейнер*/
+
+/*стили слайдера*/
+
+.slider{
+	max-width:850px;
+	/*max-height:440px;*/
+}
+
+.slider div{
+	position:relative;
+	z-index:0;
+}
+
+.slider div h3{
+	position:absolute;
+	bottom:0;
+	z-index:1;
+	margin:0;
+	padding:20px 20px;
+	width:850px;
+	background:rgba(33, 68, 84, 0.4);
+	font-size:1.5em;
+	font-family:lato;
+	color:#fff;
+}
+
+.slider div img{
+	width:850px;
+	max-height:460px;
+}
+
+/*стили слайдера*/
+
+/*стили новостей*/
+
+.newsanons{
+	padding-top:30px;
+	max-width:850px;
+	padding-left:24px;
+	padding-right:24px;
+}
+
+.newsanons h2{
+	font-size:1.5em;
+	font-family:lato;
+	color:#214454;
+	margin:0 0 24px 0;
+}
+
+.newsanons .newsanonscontent{
+	max-width:inherit;
+	display:flex;
+	padding-bottom:20px;
+}
+
+.newsanons .newsanonscontent aside{
+	flex:1 1 350px;/*250*/
+}
+
+.newsanons .newsanonscontent aside img{
+	width:350px;
+	/*height:180px;*/
+}
+
+.newsanons .newsanonscontent section{
+	flex:5 1 400px;
+	padding-left:10px;
+}
+
+.newsanons .newsanonscontent section a{
+	text-decoration:none;
+	color:#333333;
+}
+
+.newsanons .newsanonscontent section a:hover{
+	text-decoration:underline;
+}
+
+.newsanons .newsanonscontent section a h3{
+	font-size:1.2em;
+	font-family:lato;
+	
+	margin:0;
+}
+
+.newsanons .newsanonscontent section p{
+	font-size:1em;
+	font-family:merriweather;
+	text-align:justify;
+	color:#333333;
+	margin:0;
+}
+
+#pagination{
+	display:block;
+	width:90px;
+	height:28px;
+	border:2px solid black;
+	text-align:center;
+	line-height:28px;
+	color:black;
+	text-decoration:none;
+	background-color:rgba(0, 0, 0, .1);
+	transition:all .8s ease;
+}
+
+#pagination:hover{
+	background-color:rgba(0, 0, 0, .8);
+	color:#fff;
+}
+/*стили новостей*/
+
+/*стили фоторепортажей*/
+
+.fotoanons{
+	padding-top:30px;
+	max-width:850px;
+	padding-left:24px;
+	padding-right:24px;
+}
+
+.fotoanons h2{
+	font-size:1.5em;
+	font-family:lato;
+	color:#214454;
+	margin:0 0 24px 0;
+}
+
+.fotoanons .fotoanonscontent{
+	max-width:inherit;
+	padding-bottom:16px;
+}
+
+.fotoanons .fotoanonscontent a{
+	text-decoration:none;
+	color:#333333;
+}
+
+.fotoanons .fotoanonscontent a:hover{
+	text-decoration:underline;
+}
+
+.fotoanons .fotoanonscontent img{
+	width:170px;
+	height:101px;
+}
+
+.fotoanons .fotoanonscontent a h3{
+	font-size:1.2em;
+	font-family:lato;
+	margin:0;
+}
+
+.fotoanons .fotoanonscontent p{
+	font-size:1em;
+	font-family:merriweather;
+	color:#333333;
+	margin:0;
+}
+
+/*стили фоторепортажей*/
+
+/*стили персонал*/
+
+.collegs{
+	padding-top:30px;
+	max-width:850px;
+}
+
+.collegs h2{
+	font-size:1.5em;
+	font-family:lato;
+	color:#214454;
+	margin:0 0 24px 0;
+	padding-left:24px;
+	padding-right:24px;
+}
+
+.collegs .collegscontent{
+	max-width:inherit;
+}
+
+.collegs .collegscontent .collegnumber{
+	text-align:center;
+}
+
+.collegs .collegscontent .collegnumber a{
+
+
+}
+
+.collegs .collegscontent .collegnumber img{
+	margin:0 auto;
+	width:131px;
+	height:189px;
+}
+
+.collegs .collegscontent .collegnumber h3{
+	font-size:1.2em;
+	font-family:lato;
+	color:#333333;
+}
+
+.collegs .collegscontent .collegnumber p{
+	font-size:1em;
+	font-family:merriweather;
+	color:#333333;
+}
+
+/*стили персонал*/
+
+
+/*стили достижения*/
+
+.rewards{
+	padding-top:30px;
+	max-width:850px;
+}
+
+.rewards .rewardscontent{
+	max-width:inherit;
+}
+
+.rewards h2{
+	font-size:1.5em;
+	font-family:lato;
+	color:#214454;
+	margin:0 0 24px 0;
+	padding-left:24px;
+	padding-right:24px;
+}
+
+.rewards .rewardscontent div{
+	text-align:center;
+}
+
+.rewards .rewardscontent div img{
+	margin:0 auto;
+}
+
+/*стили достижения*/
+
+
+/*стили партнеры*/
+
+.partners{
+	padding-top:30px;
+	max-width:850px;
+	padding-left:24px;
+	padding-right:24px;
+}
+
+.partners h2{
+	font-size:1.5em;
+	font-family:lato;
+	color:#214454;
+	margin:0 0 24px 0;
+}
+
+.partners .partnerscontent{
+	display:flex;
+	flex-wrap:wrap;
+}
+
+.partners .partnerscontent a{
+	margin:0 1%;
+}
+
+.partners .partnerscontent a div img{
+	width:50px;
+	height:50px;
+}
+
+/*стили партнеры*/
+
+.rightcontent{
+	flex:1 1 290px;
+	
+}
+
+.rightcontent ul{
+	padding:0;
+	margin:0;
+	list-style:none;
+}
+
+.rightcontent ul li{
+	margin-bottom:30px;
+}
+
+/*футтер*/
+
+footer{
+	max-width:1140px;
+	padding-bottom:30px;
+	margin:0 auto;
+	display:flex;
+}
+
+footer div{
+	flex:1 1 auto;
+	margin-right:45px;
+}
+
+footer div:last-child{
+	margin-right:0;
+}
+
+footer div a{
+	color:#fff;
+	text-decoration:none;
+}
+
+footer div a h2{
+	font-size:1.6em;
+	font-family:lato;
+}
+
+footer div a p{
+	font-size:1.2em;
+	font-family:merriweather;
+}
+
+/*футтер*/
+
+.developer{
+	width:100%; 
+	background:rgba(255,255,255,0.3); 
+	margin-top:20px;
+	padding:10px 0;
+	color:#fff;
+	text-align:center;
+	font-size:1em;
+	font-family:lato;
+}
+
+
+/*о нас*/
+
+.container{
+	padding-top:30px;
+	max-width:850px;
+	padding-left:24px;
+	padding-right:24px;
+}
+
+.container .concontent .ourcontact{
+	float:left;
+	width:395px;
+}
+
+.container .concontent .ourcontact:nth-child(2){
+	margin-left:10px;
+}
+
+.container .concontent h2{
+	font-size:1.8em;
+	font-family:lato;
+	color:#214454;
+	margin:0 0 0 0;
+}
+
+.container .concontent p{
+	font-size:1em;
+	font-family:merriweather;
+	text-align:justify;
+	color:#333333;
+	line-height:2;
+}
+
+.container .concontent em{
+	font-size:1em;
+	font-family:merriweather;
+	font-style: normal;
+	text-align:justify;
+	color:#333333;
+	display:block;
+	margin:20px 0;
+}
+
+.container .concontent .sllddr{
+	margin-left:-24px;
+	margin-right:-24px;
+	max-width:850px;
+}
+
+.container .concontent .sllddrnav{
+	margin-top:15px;
+	max-width:800px;
+}
+
+.container .concontent .sllddrnav img{
+	width:90%;
+	height:7.25em;
+	
+}
+
+.container .concontent img{
+	width:100%;
+	/*height:35em;*/
+}
+
+.container .concontent .confotowrapper{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	padding-bottom:10px;
+}
+
+.container .concontent .confotowrapper a{
+	text-decoration:none;
+	color:#333333;
+}
+
+.container .concontent .confotowrapper a:hover{
+	text-decoration:underline;
+}
+
+.container .concontent .confotowrapper figure figcaption{
+	font-size:1.5em;
+	font-family:merriweather;
+	
+}
+
+.container .concontent .confotowrapper img,
+.container .concontent .confotowrapper figure iframe{
+	width:320px;
+	height:213px;
+	border-width:0;
+}
+
+.container h2{
+	font-size:1.8em;
+	font-family:lato;
+	color:#214454;
+	margin:0 0 0 0;
+}
+
+.container .contactpersonal{
+	display:flex;
+	flex-wrap:wrap;
+	padding-bottom:15px;
+	padding-top:15px;
+}
+
+.container .contactpersonal aside{
+	flex:1 1 100px;
+	padding-right:20px;
+}
+
+.container .contactpersonal aside img{
+	width:150px;
+	height:200px;
+}
+
+.container .contactpersonal section{
+	flex:1 1 600px;
+	padding-left:20px;
+	/*border-left:1px solid #214454;*/
+}
+
+.container .contactpersonal section h3{
+	margin:0;
+	font-size:1.6em;
+	background-color:#AABBC9;
+	color:#fff;
+	padding:0 5px;
+}
+
+.container .contactpersonal section div {
+	background-color:#E2E8ED;
+	min-height:70px;
+	padding-left:5px;
+}
+
+.container .contactpersonal section div p{
+	margin:0 0 10px 0;
+	font-size:1.3em;
+}
+
+/*о нас*/
+.sscf-popup{
+	width:255px;
+	height:60px;
+	margin-bottom:30px;
+	background-color:#008CD3;
+	border: 1px solid #E2E8ED;
+	color:#fff;
+}
+
+#infobardm{
+	display:flex;
+}
+
+.eye{
+	flex:1 1 250px;
+	background:#E4E4E4 !important;
+}
+
+.dmcolor4{
+	flex:1 1 100px;
+	display:block;
+}
+
+/*для панели для слепых*/
+
+
+
+/*для панели для слепых, конец*/
+
+
+@media (max-width:1120px) and (min-width:855px){
+body{
+	font-size:80%;
+}
+
+header{
+	max-width:850px;
+	font-size:86%;
+}
+
+header .logotext h1{
+	padding-right:1%;
+	padding-top:5px;
+}
+
+header .logotext p{
+	padding-right:1%;
+}
+
+.socseti{
+	max-width:850px;
+}
+
+.allcontent{
+	max-width:850px;
+}
+
+.allcontent .leftcontent{
+	margin:0;
+}
+
+.allcontent .leftcontent nav{
+}
+
+.rightcontent{
+	display:none;
+}
+
+footer{
+	max-width:850px;
+	font-size:86%;
+	margin:0 auto;
+}
+
+footer div{
+	margin:0;
+	text-align:center;
+}
+
+}
+
+@media (max-width:854px) and (min-width:600px){
+body{
+	font-size:65%;
+}
+
+header{
+	max-width:600px;
+	font-size:80%;
+}
+
+header .logo:nth-child(1){
+	flex:1 5 130px;
+	background-size:130px 70px;
+	background-position:top;
+	height:70px;
+}
+
+header .logo:nth-child(3){
+	display:none;
+}
+
+
+header .logotext h1{
+	margin-bottom:10px;
+	padding-right:1%;
+	padding-top:5px;
+}
+
+header .logotext p{
+	padding-right:1%;
+	margin-bottom:0px;
+}
+
+.newsanons .newsanonscontent aside{
+	flex: 1 1 250px;
+}
+
+.newsanons .newsanonscontent section{
+	flex: 5 1 500px;
+}
+
+.newsanons .newsanonscontent aside img{
+	width:100%;
+}
+
+.rightcontent{
+	display:none;
+}
+
+.allcontent, 
+.leftcontent, 
+.allcontent .leftcontent nav, 
+.slider, 
+.newsanons, 
+.fotoanons, 
+.collegs,
+.rewards,
+.partners{
+	max-width:600px;
+}
+
+.socseti{
+	max-width:600px;
+}
+
+.slider div img{
+	width:600px;
+	max-height:390px;
+}
+
+.allcontent .leftcontent{
+	max-width:600px;
+	margin:0;
+}
+
+footer{
+	max-width:600px;
+	font-size:80%;
+}
+
+footer div{
+	text-align:center;
+}
+
+.container .concontent .ourcontact{
+	float:left;
+	max-width:255px;
+}
+
+.container .concontent .ourcontact:nth-child(2){
+	margin-left:10px;
+}
+
+.container .contactpersonal section{
+	flex:1 1 600px;
+	padding-left:0px;
+	border-left:0px;
+}
+
+.container .contactpersonal aside{
+	display:none;
+}
+
+
+}
+
+@media (max-width:599px) and (min-width:420px){
+body{
+	font-size:60%;
+}
+
+header{
+	display:block;
+	max-width:420px;
+}
+
+header .logo:nth-child(1){
+	background-position:center;
+}
+
+header .logo:nth-child(3){
+	display:none;
+}
+
+header .logotext h1{
+	text-align:center;
+	margin-top:10px;
+}
+
+header .logotext p{
+	display:none;
+}
+
+.rightcontent{
+	display:none;
+}
+
+.allcontent{
+	margin:0 auto;
+}
+
+.allcontent .leftcontent{
+	margin:0;
+}
+
+.allcontent, 
+.leftcontent, 
+.allcontent .leftcontent nav, 
+.slider, 
+.newsanons, 
+.fotoanons, 
+.collegs,
+.rewards,
+.partners{
+	max-width:420px;
+}
+
+.socseti{
+	max-width:420px;
+}
+
+.slider div img{
+	width:420px;
+	max-height:390px;
+}
+
+.newsanons .newsanonscontent{
+	display:block;
+}
+
+.newsanons .newsanonscontent aside img{
+	width:100%;
+	margin-bottom:20px;
+}
+
+footer{
+	max-width:420px;
+}
+
+footer div{
+	text-align:center;
+}
+
+footer div:nth-child(2),
+footer div:nth-child(3){
+	display:none;
+}
+
+.container .concontent .ourcontact:nth-child(2){
+	margin-left:0px;
+}
+
+.container .contactpersonal section{
+	flex:1 1 600px;
+	padding-left:0px;
+	border-left:0px;
+}
+
+.container .contactpersonal aside{
+	display:none;
+}
+
+}
+
+@media (max-width:419px) and (min-width:320px){
+body{
+	font-size:55%;
+}
+
+header{
+	display:block;
+	max-width:320px;
+}
+
+header .logo:nth-child(1){
+	background-position:center;
+}
+
+header .logo:nth-child(3){
+	display:none;
+}
+
+header .logotext h1{
+	text-align:center;
+	margin-top:10px;
+}
+
+header .logotext p{
+	display:none;
+}
+
+.rightcontent{
+	display:none;
+}
+
+.allcontent{
+	margin:0 auto;
+}
+
+.allcontent .leftcontent{
+	margin:0;
+}
+
+.allcontent, 
+.leftcontent, 
+.allcontent .leftcontent nav, 
+.slider, 
+.newsanons, 
+.fotoanons, 
+.collegs,
+.rewards,
+.partners{
+	max-width:320px;
+}
+
+.socseti{
+	max-width:320px;
+}
+
+.slider div img{
+	width:320px;
+	max-height:390px;
+}
+
+.newsanons{
+	display:block;
+}
+
+.newsanons .newsanonscontent{
+	display:block;
+}
+
+
+.newsanons .newsanonscontent aside{
+	width:272px;
+}
+
+.newsanons .newsanonscontent aside img{
+	width:100%;
+}
+
+.newsanons .newsanonscontent section{
+	width:100%;
+	padding-left: 0px;
+}
+
+.fotoanons .fotoanonscontent{
+	text-align:center;
+}
+
+footer{
+	max-width:320px;
+	padding-bottom:30px;
+	margin:0 auto;
+	display:flex;
+}
+
+footer div{
+	text-align:center;
+}
+
+footer div:nth-child(2){
+	display:none;
+}
+
+footer div:nth-child(3){
+	display:none;
+}
+
+.container .concontent .ourcontact{
+	float:left;
+	width:250px;
+}
+
+.container .concontent .ourcontact:nth-child(2){
+	margin-left:0px;
+}
+
+.container .concontent .confotowrapper figure{
+	margin:9px auto;
+}
+
+.container .concontent .confotowrapper figure figcaption{
+	font-size:1.5em;
+}
+
+.container .contactpersonal section{
+	flex:1 1 600px;
+	padding-left:0px;
+	border-left:0px;
+}
+
+.container .contactpersonal aside{
+	display:none;
+}	
+	
+}

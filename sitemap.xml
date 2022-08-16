@@ -1,0 +1,27 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+ <url>
+  <loc>http://www.xn--48-glce4b.xn--p1ai/</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+ </url>
+ <url>
+  <loc>http://www.xn--48-glce4b.xn--p1ai/pone.php?news</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+ </url>
+ <url>
+  <loc>http://www.xn--48-glce4b.xn--p1ai/pone.php?club</loc>
+  <changefreq>always</changefreq>
+  <priority>1.0</priority>
+ </url>
+ <url>
+  <loc>http://www.xn--48-glce4b.xn--p1ai/pone.php?contact</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+ </url>
+ <url>
+  <loc>http://www.xn--48-glce4b.xn--p1ai/index.php</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+ </url>
+</urlset>
