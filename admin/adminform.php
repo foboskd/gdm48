@@ -521,10 +521,8 @@ if(!isset($_SESSION['id'])) //проверям входил ли пользов�
 								$position = $_POST['position'];
 								$contacts = $_POST['contacts'];
 								
-								$inquiry = mysqli_query($connection, "UPDATE employees SET fio='$fio', position='$position', contacts='$contacts' img='$shortImage', imgmin='$minimage' WHERE id=".$_GET['id']);
-								echo "test = ".$shortImage;
-								echo "<br> test_2 = ".$minimage;
-								//header('Location:/admin/index.php?employees');
+								$inquiry = mysqli_query($connection, "UPDATE employees SET fio='$fio', position='$position', contacts='$contacts', img='$shortImage', imgmin='$minimage' WHERE id=".$_GET['id']);
+								header('Location:/admin/index.php?employees');
 						}else{
 								$fio = $_POST['fio'];
 								$position = $_POST['position'];

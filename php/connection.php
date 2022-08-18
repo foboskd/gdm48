@@ -9,7 +9,7 @@ header('Content-Type: text/html; charset=utf-8');
 	}
 
 	$connection = mysqli_connect('mysql-18.smartape.ru', 'user11046_mgdm', '31052017', 'user11046_gdm');
-	mysqli_set_charset($connection, 'utf8');	
+	mysqli_set_charset($connection, 'utf8mb4');	
 	
 	if ($connection == false){
 		echo 'база данных не подключена';
