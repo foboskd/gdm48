@@ -1,3 +1,4 @@
-php/connection.php
+/php/connection.php
 .DS_Store
 admin
+.gitignore
